@@ -28,6 +28,11 @@ const blogSchema = new Schema<TProject>(
       type: String,
       required: true,
     },
+
+    userEmail: {
+      type: String,
+      required: true,
+    },
     image: {
       type: String,
       required: true,

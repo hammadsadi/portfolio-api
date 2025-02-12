@@ -15,6 +15,14 @@ const blogSchema = new Schema<TBlog>(
       type: String,
       required: true,
     },
+    category: {
+      type: String,
+      required: true,
+    },
+    userEmail: {
+      type: String,
+      required: true,
+    },
     image: {
       type: String,
       required: true,

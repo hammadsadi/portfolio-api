@@ -6,5 +6,6 @@ export type TProject = {
   fronEndGithub: string;
   backendEndGithub: string;
   projectLiveLink: string;
+  userEmail: string;
   image: string;
 };

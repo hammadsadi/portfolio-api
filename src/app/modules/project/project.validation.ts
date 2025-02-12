@@ -3,6 +3,7 @@ import { z } from 'zod';
 const createProjectValidationSchema = z.object({
   body: z.object({
     title: z.string({ required_error: 'Project Title is Required' }),
+    userEmail: z.string({ required_error: 'User Emailis Required' }),
     description: z.string({
       required_error: 'Project Description is Required',
     }),
@@ -25,6 +26,7 @@ const createProjectValidationSchema = z.object({
 const updateProjectValidationSchema = z.object({
   body: z.object({
     title: z.string({ required_error: 'Project Title is Required' }).optional(),
+    userEmail: z.string({ required_error: 'User Emailis Required' }).optional(),
     description: z
       .string({
         required_error: 'Project Description is Required',
